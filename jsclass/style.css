@@ -1,0 +1,52 @@
+.loader {
+    width: 100px;
+    height: 100px;
+  background-size: 10px 10px; 
+  position: relative;
+    animation: loader 3s infinite ease-in-out;
+}
+@keyframes loader {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(180deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(360deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.fade-in{
+    width:50%;
+    height: auto;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 20px;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+
+nav li a:hover {
+    color: #DDD;
+}
+
+h1  {
+	color: black;
+	font-weight: 50px
+}
+
+body{
+	margin: 20px;
+ font-family: 'Arvo', serif;
+}
+
+/*#random {
+	width: 500px;
+	max-height: 700px;s
+}
+*/
+}
