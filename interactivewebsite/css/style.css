@@ -1,0 +1,237 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	outline: none;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+	color: black;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	position: relative;
+	word-wrap: break-word;
+	text-align: justify;
+	-webkit-font-smoothing: antialiased!important;
+	font-smoothing: antialiased!important;
+	-moz-osx-font-smoothing: grayscale!important;
+	font-smooth: always!important;
+}
+
+.monster,
+.aim * {
+	-webkit-transition: all 0.7s ease-out;
+	-moz-transition: all 0.7s ease-out;
+	-o-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
+}
+.wrapper {
+	width: 800px;
+	height: 600px;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin: 0 0 0 -400px;
+	overflow: hidden;
+}
+
+.game-window {
+	position: relative;
+	cursor: url('http://poligon.kamilrogala.it/projekty/simple-jquery-game/v1/img/target.png'), auto;
+}
+
+.game-window:before {
+	display: none;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 255);
+	z-index: 999999;
+}
+
+.game-window.hit:before {
+	display: block;
+}
+
+.game-window,
+.game-bg {
+	width: 100%;
+	height: 100%;
+}
+
+.game-bg {
+	background: gray;
+}
+
+.tombstone,
+[class^='element'],
+.monster,
+.score,
+.monster.hit:before,
+.monster.hit:after {
+	position: absolute
+}
+
+
+[class^='element'] {
+	z-index: 99;
+}
+
+[class~='with-monster'] {
+	z-index: 999;
+}
+
+.element-1 {
+	top: 150px;
+	right: 20px;
+}
+
+.element-2 {
+	top: 50px;
+	left: 50px;
+}
+
+.element-3 {
+	top: 250px;
+	left: 300px;
+}
+
+.element-4 {
+	top: 20px;
+	left: 250px;
+}
+
+.element-5 {
+	bottom: 25px;
+	left: 10px;
+}
+
+.element-6 {
+	bottom: 50px;
+	right: 55px;
+}
+
+.element-7 {
+	top: 120px;
+	left: 440px;
+}
+
+.element-8 {
+	bottom: 150px;
+	left: 100px;
+}
+
+.element-9 {
+	top: 400px;
+	right: 150px;
+}
+
+.element-10 {
+	bottom: 150px;
+	left: -100px;
+}
+
+
+
+
+
+.monster {
+	line-height: 0;
+	z-index: 1;
+	top: 0;
+	left: 50%;
+	margin-left: -50px;
+	cursor: url('http://poligon.kamilrogala.it/projekty/simple-jquery-game/v1/img/target_pointed.png'), auto;
+	overflow: hidden
+}
+
+.monster.active {
+	top: -100px
+}
+
+.monster-2 {
+	top: 10px;
+	left: 20px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	margin-left: 0;
+}
+
+.monster-2.active {
+	top: 0;
+	left: -100px;
+}
+
+.monster-4 {
+	top: 20px;
+	left: 10px;
+	margin-left: 0;
+}
+
+.monster-6 {
+	top: 40px;
+	left: 0;
+	margin-left: 0;
+}
+
+.monster-6.active {
+	top: 40px;
+	left: 375px;
+	margin-left: 0;
+}
+
+.monster.hit:before,
+.monster.hit:after {
+	display: block;
+	content: '';
+	width: 2px;
+	height: 200px;
+	background: #f00;
+	top: -20px;
+	left: 50%;
+	margin-top: -30px
+}
+
+.monster.hit:before {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.monster.hit:after {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.score {
+	bottom: 5px;
+	right: 15px;
+	z-index: 5;
+	color: #e80000;
+	font-size: 18px;
+}
+
+.points {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	font-weight: bold
+}
+
+.nature {
+	position: relative;
+	z-index: 9
+}
