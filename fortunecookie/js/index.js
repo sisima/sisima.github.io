@@ -30,10 +30,5 @@ $('#random').click(function() {
         snd.play();
     }
 
-    function ran_col(background) { 
-                var color = '#'; 
-                var letters = ['d9a403','00a432','fa8700','00b0e3']; 
-                color += letters[Math.floor(Math.random() * letters.length)];
-                document.getElementById('background').style.background = color;
-            }
+
 
