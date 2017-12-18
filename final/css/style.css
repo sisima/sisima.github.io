@@ -1,0 +1,128 @@
+
+
+
+
+.logo {
+  margin:  auto;
+  margin-top: 50px;
+  margin-left: -10px;
+}
+
+
+body {
+  font-family: Arial;
+  text-align:center;
+  background-color: black;
+}
+
+
+
+#nav-box {
+
+  display: inline-block;
+  margin-right: -5px;
+  margin-top: 50px;
+  padding: 0px 0;
+
+}
+
+
+#nav-box ul {
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+
+#nav-box ul li {
+  display: inline-block;
+  padding: 0px -30px;
+  margin: 15px 0px;
+  border-radius: 15px;
+
+}
+
+#nav-box ul li a {
+  text-decoration: none;
+  color: Black;
+}
+
+#nav-box ul li a:hover {
+  text-decoration: underline;
+  color: Black;
+}
+
+#highlight {
+  border-radius: 10px;
+  background-color: #960505;
+  position: absolute;
+  display: inline-block;
+  z-index: 0;
+}
+
+p {
+  color: white;
+  margin-left: 1200px;
+  margin-top: -300px;
+
+}
+
+.biaodian{
+  position: relative;
+  top: -400px;
+  left: 290px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+    z-index: 10;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 150px auto;
+  padding: 40px;
+  background: #960505;
+  border-radius: 12px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  z-index: 10;
+    text-align:left;
+}
+
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #dd9886;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  color: white;
+}
+
+
